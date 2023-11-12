@@ -10,6 +10,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
       crossorigin="anonymous"
       />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-rIcEmsl5yYkxPsqJ7y7J+KqU5IpC07KujcZljLv7JWW77H1cIl8qTkCT+fp6zpL52u54KKvbb9lMx6n9hXWtRQ==" crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -28,12 +29,69 @@
     <header>
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      
+      <!-- Displays current day with id"currentDay" -->
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- Time Blocks -->
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <div class="col-md-2 hour">9 AM</div>
+        <textarea class="col-md-8 description past"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+    
+      <div class="row time-block">
+        <div class="col-md-2 hour">10 AM</div>
+        <textarea class="col-md-8 description"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-2 hour">11 AM</div>
+        <textarea class="col-md-8 description">Event that already happened</textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+    
+      <div class="row time-block">
+        <div class="col-md-2 hour">12 PM</div>
+        <textarea class="col-md-8 description present">Current Hour</textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-2 hour">1 PM</div>
+        <textarea class="col-md-8 description future"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+    
+      <div class="row time-block">
+        <div class="col-md-2 hour">2 PM</div>
+        <textarea class="col-md-8 description future"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-2 hour">3 PM</div>
+        <textarea class="col-md-8 description future"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+    
+      <div class="row time-block">
+        <div class="col-md-2 hour">4 PM</div>
+        <textarea class="col-md-8 description future"></textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
+
+      <div class="row time-block">
+        <div class="col-md-2 hour">5 PM</div>
+        <textarea class="col-md-8 description future">Change event</textarea>
+        <button class="col-md-2 saveBtn"><i class="fa-solid fa-floppy-disk"></i></button>
+      </div>
     </div>
 
+    <!-- JavaScript links -->
+    <script src="https://kit.fontawesome.com/baec6f43dc.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="/starter/index.js"></script>
