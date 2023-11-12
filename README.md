@@ -1,87 +1,43 @@
-# Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+Work Day Scheduler is a simple calendar app designed to help you schedule and organize your workday effectively. The application allows you to input and save tasks or events for specific hours of the day.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Features
 
-You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+1. **Time Blocks:** The main page displays time blocks representing different hours of the day, providing an organized view of your work hours.
 
-## User Story
+2. **Current Day Display:** The current day is prominently displayed at the top of the page, providing you with up-to-date information.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+3. **Task Input:** Each time block includes a textarea where you can input and describe your tasks or events for that specific hour.
 
-## Acceptance Criteria
+4. **Save Functionality:** The "Save" button, represented by a floppy disk icon, allows you to save the inputted task or event for the corresponding hour.
 
-The app should:
+5. **Local Storage:** The application utilizes local storage to persist your tasks, ensuring that your schedule is saved even if you refresh the page or close your browser.
 
-* Display the current day at the top of the calender when a user opens the planner.
- 
-* Present timeblocks for standard business hours when the user scrolls down.
- 
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
- 
-* Allow a user to enter an event when they click a timeblock
+6. **Code Snapshot** 
 
-* Save the event in local storage when the save button is clicked in that timeblock.
+![Alt text](image.png)
 
-* Persist events between refreshes of a page
+## Getting Started
 
-The following animation demonstrates the application functionality:
+To use the Work Day Scheduler:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
+1. Open the `index.html` file in your web browser.
+2. Input your tasks or events for each hour using the provided text areas.
+3. Click the "Save" button next to each textarea to save the corresponding task.
+4. See website URL here https://nonsoiwedinobi.github.io/Daily-Planner-App/
 
+## Dependencies
 
-## Grading Requirements
+- [jQuery](https://jquery.com/): Used for DOM manipulation and event handling.
+- [dayjs](https://day.js.org/): Used for working with dates and times.
 
-This homework is graded based on the following criteria: 
+## Author
 
-### Technical Acceptance Criteria: 40%
+Nonso Iwedinobi
 
-* Satisfies all of the above acceptance criteria plus the following:
+## License
 
-  * Uses a date utility library to work with date and time
+This project is licensed under the [MIT License](LICENSE).
 
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Feel free to customize this README file based on your specific project details and requirements.
