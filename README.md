@@ -39,5 +39,3 @@ Nonso Iwedinobi
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-Feel free to customize this README file based on your specific project details and requirements.
