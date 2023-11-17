@@ -18,6 +18,11 @@ Work Day Scheduler is a simple calendar app designed to help you schedule and or
 
 ![Alt text](image.png)
 
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
 ## Getting Started
 
 To use the Work Day Scheduler:
