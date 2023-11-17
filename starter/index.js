@@ -22,6 +22,33 @@ $(document).ready(function() {
     $("#15 .description").val(localStorage.getItem("15"));
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
+
+    // Repaint appointment
+  function repaintAppointmentBlocks(){
+    let recentHour = dayjs().hour();
+    console.log("recentHour = ", recentHour);
+    $(".time-block").each(function() {
+      let appointmentHour = parseInt($(this).attr("id"));
+      
+      if (appointmentHour < recentHour){
+        $(this).addClass("past");
+        console.log("past, appointmentHour = ", appointmentHour);
+      } else if (appointmentHour === recentHour){
+        console.log("present, appointmentHour = ", appointmentHour);
+        $(this).removeClass("past");
+        $(this).addClass("present");
+        
+      } else {
+        console.log("future, appointmentHour = ", appointmentHour);
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
+        
+      } 
+    })
+  }
+
+  repaintAppointmentBlocks();
   });
 
   
